@@ -10,7 +10,7 @@ const urlSchema = new mongoose.Schema({
         type: String,
         required: true,
         index: true,
-        unique: true
+        // unique: true //for enforced duplicate prevention of short url
     },
     created_at: {
         type: Date,

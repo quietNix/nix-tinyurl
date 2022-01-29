@@ -9,5 +9,5 @@ POST http://localhost:4000/
 content-type: application/json
 
 {
-    "longUrl": "https://quietnix.com"
+    "longUrl": "https://trillo.quietnix.com"
 }

@@ -1,7 +1,7 @@
 const counterModel = require("../models/counter");
 
 const getCounter=async(req, res, next) =>{
-    const counter = await counterModel.findOne({});
+    let counter = await counterModel.findOneAndUpdate({}, {$inc: {count: 1}})
     req.body.counter = counter;
     return next();
 }
