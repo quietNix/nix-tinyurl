@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tineUrl</title>
+</head>
+
+<body>
+    <h1>Welcome to quietnix's tinyurl system</h1>
+    <h2>Lists of All Urls in system</h2>
+    <ul>
+        <% allUrls.map((item)=> { %>
+            <li>
+                <h4>Long Url: <%= item.long_url%></h4>
+                <h4>Long Url: <a href="https://nixurl.herokuapp.com/<%= item.short_url%>">https://nixurl.herokuapp.com/<%= item.short_url%></a></h4>
+                <h4>Created At: <%= item.created_at%></h4>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
