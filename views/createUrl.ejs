@@ -20,7 +20,7 @@
     <% if(urlAdded){ %>
         <h2>Your Url:</h2>
         <h3>Long url is: <%= urlAdded.long_url %></h3>
-        <h3>Short url is: https://nix-tinyurl.herokuapp.com/<%= urlAdded.short_url %></a></h3>
+        <h3>Short url is: <a href="https://nix-tinyurl.herokuapp.com/<%= urlAdded.short_url %>" target="blank"> https://nix-tinyurl.herokuapp.com/<%= urlAdded.short_url %></a></h3>
         <% } %>
 
         <h1><a href="https://nix-tinyurl.herokuapp.com/list" target="blank">List All Urls</a></h1>
